@@ -7,7 +7,6 @@
           {{ day() }} <br />
           {{ date() }}
         </h3>
-        dskljadlskja
       </div>
 
       <!--   todo-text-input ,todo-add-btn    -->
