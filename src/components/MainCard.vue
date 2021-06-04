@@ -1,13 +1,11 @@
 <template>
-$END$
+  <div class="main-card">
+    <slot />
+  </div>
 </template>
 
 <script>
 export default {
-name: "MainCard"
-}
+  name: "MainCard"
+};
 </script>
-
-<style scoped>
-
-</style>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap')
+
+$primary: #00d87f
+
+body
+  font-family: 'Open Sans', sans-serif !important
+
+#app
+  width: 100vw
+  height: 100vh
+  background: linear-gradient(-20deg, #1d976c, #93f9b9)
+  background: -webkit-linear-gradient(-20deg, #1d976c, #93f9b9)
+
+.main-card
+  min-width: 400px
+  min-height: 300px
+  max-height: calc(100vh - 32px)
+  overflow-y: auto
+  overflow-x: hidden
+  background-color: #FFF
+  box-shadow: gray 6px 6px 8px
+
+.date
+  h3
+    color: $primary
+
+.add-todo
+  input
+    width: 100%
+    border: none
+    font-weight: 300
+    background-color: #fff
+    border-bottom: 1px solid $primary
+    &:focus
+      outline: none
+      caret-color: $primary
+  button
+    color: #00d87f
+    font-size: 24px
+    background: #fff
+    transition: all 0.5s
+    &:hover
+      background-color: #e5e5e5
+
+.todo-counter
+  font-weight: 300
+
+.todo-card
+  font-weight: 300
+  background-color: #fff
+  box-shadow: gray 1px 1px 2px
+
+  input[type=checkbox]
+    &:checked
+      border: $primary
+      background-color: $primary
+    &:focus
+      box-shadow: 0 0 0 .25rem rgba(0,216,127,.25)
+
+.clear-btn
+  transition: all 0.5s
+  background-color: #fff
+  &:hover
+    background-color: #e5e5e5
+
